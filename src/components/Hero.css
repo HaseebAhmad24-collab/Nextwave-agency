@@ -116,7 +116,8 @@
   font-size: 16px;
   font-weight: 700;
   border: none;
-  box-shadow: 0 10px 20px rgba(30, 58, 138, 0.2);
+  box-shadow: 0 10px 25px -5px rgba(30, 58, 138, 0.4);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-hero-primary:hover {
@@ -125,19 +126,22 @@
 }
 
 .btn-hero-secondary {
-  background: white;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(8px);
   color: var(--primary);
-  padding: 16px 32px;
+  padding: 16px 36px;
   border-radius: 12px;
   font-size: 16px;
   font-weight: 700;
-  border: 1.5px solid var(--border);
+  border: 1.5px solid var(--primary);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-hero-secondary:hover {
-  background: #f8fafc;
-  border-color: var(--primary);
+  background: var(--primary);
+  color: white;
   transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(30, 58, 138, 0.2);
 }
 
 .hero-trust {

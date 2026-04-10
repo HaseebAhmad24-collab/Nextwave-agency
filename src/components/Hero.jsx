@@ -50,8 +50,8 @@ const Hero = () => {
           </motion.p>
           
           <motion.div className="hero-buttons" variants={itemVariants}>
-            <a href="#contact" className="btn btn-primary">Get Free Consultation</a>
-            <a href="#contact" className="btn btn-outline">View Services</a>
+            <a href="#contact" className="btn-hero-primary">Get Free Consultation</a>
+            <a href="#services" className="btn-hero-secondary">View Services</a>
           </motion.div>
           
           <motion.div className="hero-trust" variants={itemVariants}>
