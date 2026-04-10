@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>NextWave Digital — Digital Marketing Agency Lahore</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:#fff;color:#1E3A8A}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:18px 48px;border-bottom:0.5px solid #e2e8f0;position:sticky;top:0;background:#fff;z-index:100}
+.logo{font-size:20px;font-weight:700;color:#1E3A8A}
+.logo span{color:#F97316}
+.nav-links{display:flex;gap:28px;list-style:none}
+.nav-links a{text-decoration:none;font-size:14px;color:#1E3A8A;font-weight:500}
+.cta-btn{background:#F97316;color:#fff;border:none;padding:10px 22px;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer}
+.hero{background:linear-gradient(135deg,#1E3A8A 0%,#1e3a8a 60%,#152d6e 100%);padding:80px 48px;display:flex;justify-content:space-between;align-items:center;min-height:520px}
+.hero-left{max-width:580px}
+.hero-tag{background:#F97316;color:#fff;font-size:12px;font-weight:600;padding:6px 16px;border-radius:20px;display:inline-block;margin-bottom:24px;letter-spacing:1px}
+.hero-title{font-size:48px;font-weight:800;color:#fff;line-height:1.15;margin-bottom:20px}
+.hero-title span{color:#FBBF24}
+.hero-sub{font-size:16px;color:#93c5fd;line-height:1.7;margin-bottom:32px}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn-primary{background:#F97316;color:#fff;padding:14px 28px;border-radius:8px;font-size:15px;font-weight:600;border:none;cursor:pointer}
+.btn-secondary{background:transparent;color:#fff;padding:14px 28px;border-radius:8px;font-size:15px;font-weight:600;border:2px solid rgba(255,255,255,0.4);cursor:pointer}
+.trust-badge{margin-top:36px;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.08);padding:12px 20px;border-radius:10px;width:fit-content}
+.trust-dot{width:8px;height:8px;background:#FBBF24;border-radius:50%}
+.trust-badge span{color:#93c5fd;font-size:13px}
+.hero-stats{display:flex;flex-direction:column;gap:16px}
+.stat-card{background:rgba(255,255,255,0.08);border:0.5px solid rgba(255,255,255,0.15);border-radius:14px;padding:22px 28px;text-align:center;min-width:140px}
+.stat-num{font-size:36px;font-weight:800;color:#FBBF24}
+.stat-label{font-size:12px;color:#93c5fd;margin-top:4px}
+.section{padding:72px 48px}
+.section-label{font-size:12px;font-weight:600;color:#F97316;letter-spacing:2px;margin-bottom:10px}
+.section-title{font-size:36px;font-weight:800;color:#1E3A8A;margin-bottom:16px}
+.section-sub{font-size:16px;color:#64748b;max-width:600px;line-height:1.7;margin-bottom:48px}
+.problem-bg{background:#f8faff}
+.problem-text{font-size:16px;color:#475569;line-height:1.8;max-width:700px;border-left:4px solid #F97316;padding-left:20px}
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.service-card{background:#fff;border:0.5px solid #e2e8f0;border-radius:14px;padding:28px 24px}
+.service-icon{width:44px;height:44px;background:#EFF6FF;border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.service-icon svg{width:22px;height:22px}
+.service-card h3{font-size:16px;font-weight:700;color:#1E3A8A;margin-bottom:8px}
+.service-card p{font-size:13px;color:#64748b;line-height:1.6}
+.why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.why-card{background:rgba(255,255,255,0.06);border:0.5px solid rgba(255,255,255,0.1);border-radius:12px;padding:22px;display:flex;gap:12px;align-items:flex-start}
+.why-check{width:28px;height:28px;background:#FBBF24;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;color:#fff;font-size:14px;font-weight:700}
+.why-text{font-size:14px;color:#cbd5e1;line-height:1.6}
+.why-bg{background:#1E3A8A}
+.why-bg .section-title{color:#fff}
+.why-bg .section-label{color:#FBBF24}
+.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.price-card{background:#fff;border:0.5px solid #e2e8f0;border-radius:16px;padding:32px 28px;text-align:center;position:relative}
+.price-card.featured{border:2px solid #F97316}
+.featured-badge{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:#F97316;color:#fff;font-size:11px;font-weight:700;padding:4px 16px;border-radius:20px;white-space:nowrap}
+.price-name{font-size:14px;font-weight:700;color:#64748b;letter-spacing:1px;margin-bottom:8px}
+.price-amount{font-size:36px;font-weight:800;color:#1E3A8A;margin-bottom:4px}
+.price-period{font-size:13px;color:#94a3b8;margin-bottom:24px}
+.price-features{list-style:none;text-align:left;margin-bottom:28px}
+.price-features li{font-size:13px;color:#475569;padding:6px 0;border-bottom:0.5px solid #f1f5f9;display:flex;gap:8px;align-items:center}
+.price-features li::before{content:"";width:6px;height:6px;background:#FBBF24;border-radius:50%;flex-shrink:0}
+.price-btn{width:100%;padding:12px;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;border:none}
+.price-btn-outline{background:transparent;color:#1E3A8A;border:1.5px solid #1E3A8A}
+.price-btn-filled{background:#F97316;color:#fff}
+.process-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative}
+.process-steps::before{content:"";position:absolute;top:28px;left:12%;right:12%;height:2px;background:#e2e8f0;z-index:0}
+.step{text-align:center;position:relative;z-index:1}
+.step-num{width:56px;height:56px;border-radius:50%;color:#fff;font-size:20px;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 16px}
+.step h3{font-size:16px;font-weight:700;color:#1E3A8A;margin-bottom:8px}
+.step p{font-size:13px;color:#64748b;line-height:1.5}
+.target-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:16px}
+.target-card{background:#fff;border:0.5px solid #e2e8f0;border-radius:12px;padding:20px;text-align:center}
+.target-icon{font-size:28px;margin-bottom:10px}
+.target-card h4{font-size:13px;font-weight:700;color:#1E3A8A;margin-bottom:4px}
+.target-card p{font-size:12px;color:#64748b}
+.contact-bg{background:#1E3A8A}
+.contact-bg .section-title{color:#fff}
+.contact-bg .section-label{color:#FBBF24}
+.contact-wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.contact-form{background:rgba(255,255,255,0.06);border:0.5px solid rgba(255,255,255,0.12);border-radius:16px;padding:32px}
+.form-row{margin-bottom:16px}
+.form-row label{display:block;font-size:13px;color:#93c5fd;margin-bottom:6px}
+.form-row input,.form-row select{width:100%;padding:10px 14px;border-radius:8px;border:0.5px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.08);color:#fff;font-size:14px;outline:none}
+.contact-info{display:flex;flex-direction:column;gap:16px}
+.contact-item{display:flex;align-items:center;gap:14px;background:rgba(255,255,255,0.06);border-radius:12px;padding:16px}
+.contact-icon{width:40px;height:40px;background:#F97316;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.contact-item span{color:#fff;font-size:14px;font-weight:500}
+.contact-item small{color:#93c5fd;font-size:12px;display:block}
+.footer{background:#0f2060;padding:36px 48px;display:flex;justify-content:space-between;align-items:center}
+.footer-logo{font-size:18px;font-weight:700;color:#fff}
+.footer-logo span{color:#F97316}
+.footer-copy{font-size:13px;color:#64748b}
+.footer-links{display:flex;gap:20px}
+.footer-links a{font-size:13px;color:#64748b;text-decoration:none}
+.submit-btn{width:100%;background:#F97316;color:#fff;padding:13px;border-radius:8px;font-size:15px;font-weight:600;border:none;cursor:pointer;margin-top:8px}
+@media(max-width:768px){
+  .nav{padding:14px 20px}.nav-links{display:none}
+  .hero{flex-direction:column;padding:48px 20px;gap:40px}
+  .hero-title{font-size:32px}
+  .hero-stats{flex-direction:row;flex-wrap:wrap}
+  .pricing-grid{grid-template-columns:1fr}
+  .process-steps{grid-template-columns:1fr 1fr;gap:24px}
+  .process-steps::before{display:none}
+  .contact-wrap{grid-template-columns:1fr}
+  .section{padding:48px 20px}
+  .footer{flex-direction:column;gap:16px;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="logo">NextWave<span>.</span></div>
+  <ul class="nav-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Pricing</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+  <button class="cta-btn">Get Free Consultation</button>
+</nav>
+
+<section class="hero">
+  <div class="hero-left">
+    <div class="hero-tag">Digital Marketing Lahore</div>
+    <h1 class="hero-title">Grow Your Business<br><span>Without Breaking</span><br>the Bank</h1>
+    <p class="hero-sub">Professional digital marketing designed for small businesses in Lahore. Social media, content creation & paid ads starting at just Rs. 10,000/month.</p>
+    <div class="hero-btns">
+      <button class="btn-primary">View Pricing Plans</button>
+      <button class="btn-secondary">See Our Work</button>
+    </div>
+    <div class="trust-badge">
+      <div class="trust-dot"></div>
+      <span>Trusted by 50+ Local Businesses — DHA, Gulberg & Model Town</span>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="stat-card"><div class="stat-num">50+</div><div class="stat-label">Local Businesses</div></div>
+    <div class="stat-card"><div class="stat-num">3x</div><div class="stat-label">Avg. Growth Rate</div></div>
+    <div class="stat-card"><div class="stat-num">24/7</div><div class="stat-label">WhatsApp Support</div></div>
+  </div>
+</section>
+
+<section class="section problem-bg">
+  <div class="section-label">THE PROBLEM</div>
+  <h2 class="section-title">The Challenges Small Businesses Face</h2>
+  <p class="problem-text">Small businesses in Pakistan struggle with limited online presence, spending hours manually responding to customer queries, posting inconsistently without strategy, and lacking technical knowledge to run effective ads. These challenges lead to missed sales opportunities and slow growth in an increasingly competitive digital marketplace.</p>
+</section>
+
+<section class="section">
+  <div class="section-label">OUR SERVICES</div>
+  <h2 class="section-title">How We Help You Grow</h2>
+  <p class="section-sub">Everything your business needs to dominate the digital space in Lahore.</p>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#1E3A8A" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="4"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.5"/></svg></div>
+      <h3>Social Media Management</h3>
+      <p>Facebook, Instagram, TikTok, YouTube daily posting and engagement</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 12h8M12 8v8"/></svg></div>
+      <h3>Content Creation</h3>
+      <p>Professional posts, reels, stories, and branding visuals</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#1E3A8A" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
+      <h3>Paid Advertising</h3>
+      <p>Targeted ads to increase reach, traffic, and sales</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#FBBF24" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 .84h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.14a16 16 0 006.29 6.29l1.56-1.56a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div>
+      <h3>WhatsApp Marketing</h3>
+      <p>Business setup and automated customer communication</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#1E3A8A" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+      <h3>Growth Strategy</h3>
+      <p>Content calendars, performance tracking, campaign optimization</p>
+    </div>
+  </div>
+</section>
+
+<section class="section why-bg">
+  <div class="section-label">WHY US</div>
+  <h2 class="section-title">Why NextWave Digital?</h2>
+  <div class="why-grid">
+    <div class="why-card"><div class="why-check">✓</div><div class="why-text">Affordable monthly packages (Basic, Standard, Premium)</div></div>
+    <div class="why-card"><div class="why-check">✓</div><div class="why-text">Local Lahore market expertise with Urdu/Punjabi content</div></div>
+    <div class="why-card"><div class="why-check">✓</div><div class="why-text">Face-to-face meetings for trust building</div></div>
+    <div class="why-card"><div class="why-check">✓</div><div class="why-text">Flexible payment: Cash, EasyPaisa, JazzCash</div></div>
+    <div class="why-card"><div class="why-check">✓</div><div class="why-text">Quick response with same-city availability</div></div>
+    <div class="why-card"><div class="why-check">✓</div><div class="why-text">Focus on underserved micro-businesses</div></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-label">PRICING</div>
+  <h2 class="section-title">Simple, Transparent Pricing</h2>
+  <p class="section-sub">No hidden fees. No long-term contracts. Just results.</p>
+  <div class="pricing-grid">
+    <div class="price-card">
+      <div class="price-name">BASIC</div>
+      <div class="price-amount">Rs. 10,000</div>
+      <div class="price-period">per month</div>
+      <ul class="price-features">
+        <li>2 Social Platforms</li>
+        <li>12 Posts / Month</li>
+        <li>Basic Graphics</li>
+        <li>WhatsApp Setup</li>
+      </ul>
+      <button class="price-btn price-btn-outline">Get Started</button>
+    </div>
+    <div class="price-card featured">
+      <div class="featured-badge">Most Popular</div>
+      <div class="price-name">STANDARD</div>
+      <div class="price-amount">Rs. 15,000</div>
+      <div class="price-period">per month</div>
+      <ul class="price-features">
+        <li>4 Social Platforms</li>
+        <li>20 Posts / Month</li>
+        <li>Premium Graphics</li>
+        <li>Ad Management</li>
+      </ul>
+      <button class="price-btn price-btn-filled">Get Started</button>
+    </div>
+    <div class="price-card">
+      <div class="price-name">PREMIUM</div>
+      <div class="price-amount">Rs. 25,000</div>
+      <div class="price-period">per month</div>
+      <ul class="price-features">
+        <li>All Platforms</li>
+        <li>Daily Posting</li>
+        <li>Custom Branding</li>
+        <li>Strategy Calls</li>
+      </ul>
+      <button class="price-btn price-btn-outline">Get Started</button>
+    </div>
+  </div>
+</section>
+
+<section class="section problem-bg">
+  <div class="section-label">WHO WE SERVE</div>
+  <h2 class="section-title">Your Business Is Our Business</h2>
+  <div class="target-grid">
+    <div class="target-card"><div class="target-icon">🛍️</div><h4>Local Shops</h4><p>Anarkali, Liberty, Model Town</p></div>
+    <div class="target-card"><div class="target-icon">🍽️</div><h4>Restaurants</h4><p>Food Street, DHA</p></div>
+    <div class="target-card"><div class="target-icon">💅</div><h4>Salons</h4><p>Gulberg area</p></div>
+    <div class="target-card"><div class="target-icon">🏠</div><h4>Home Businesses</h4><p>Defence, Bahria Town</p></div>
+    <div class="target-card"><div class="target-icon">👗</div><h4>Clothing Brands</h4><p>Startups & boutiques</p></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-label">HOW IT WORKS</div>
+  <h2 class="section-title">4 Simple Steps to Growth</h2>
+  <div class="process-steps">
+    <div class="step"><div class="step-num" style="background:#1E3A8A">1</div><h3>Discovery</h3><p>We understand your business goals and audience</p></div>
+    <div class="step"><div class="step-num" style="background:#F97316">2</div><h3>Strategy</h3><p>Create a customized marketing plan for you</p></div>
+    <div class="step"><div class="step-num" style="background:#1E3A8A">3</div><h3>Execution</h3><p>Launch campaigns and premium content</p></div>
+    <div class="step"><div class="step-num" style="background:#FBBF24">4</div><h3>Growth</h3><p>Track results and continuously optimize</p></div>
+  </div>
+</section>
+
+<section class="section contact-bg">
+  <div class="section-label">CONTACT</div>
+  <h2 class="section-title">Ready to Grow Your Business?</h2>
+  <div class="contact-wrap">
+    <div class="contact-form">
+      <div class="form-row"><label>Business Name</label><input type="text" placeholder="Your business name"/></div>
+      <div class="form-row"><label>Your Name</label><input type="text" placeholder="Full name"/></div>
+      <div class="form-row"><label>Phone Number</label><input type="text" placeholder="+92 300 0000000"/></div>
+      <div class="form-row"><label>Service Interested In</label>
+        <select>
+          <option>Social Media Management</option>
+          <option>Content Creation</option>
+          <option>Paid Advertising</option>
+          <option>WhatsApp Marketing</option>
+          <option>Growth Strategy</option>
+        </select>
+      </div>
+      <button class="submit-btn">Send Message</button>
+    </div>
+    <div class="contact-info">
+      <div class="contact-item">
+        <div class="contact-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 .84h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.14a16 16 0 006.29 6.29l1.56-1.56a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div>
+        <div><span>WhatsApp Business</span><small>Instant response guaranteed</small></div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon" style="background:#1E3A8A;border:1px solid rgba(255,255,255,0.2)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FBBF24" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+        <div><span>info@nextwavedigital.pk</span><small>We reply within 2 hours</small></div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon" style="background:#1E3A8A;border:1px solid rgba(255,255,255,0.2)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FBBF24" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <div><span>Lahore, Pakistan</span><small>DHA, Gulberg, Model Town</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-logo">NextWave<span>.</span> Digital</div>
+  <div class="footer-copy">© 2026 NextWave Digital. All rights reserved.</div>
+  <div class="footer-links">
+    <a href="#">Services</a>
+    <a href="#">Pricing</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </div>
+</footer>
+
+</body>
+</html>

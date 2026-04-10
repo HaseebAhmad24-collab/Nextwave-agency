@@ -1,0 +1,126 @@
+.pricing-section {
+  padding: 100px 0;
+  background: var(--surface);
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.price-card {
+  background: white;
+  padding: 48px 40px;
+  border-radius: 24px;
+  border: 1px solid var(--border);
+  text-align: center;
+  position: relative;
+  transition: var(--transition-smooth);
+}
+
+.price-card.featured {
+  border: 2px solid var(--secondary);
+  box-shadow: 0 20px 40px rgba(249, 115, 22, 0.1);
+}
+
+.featured-badge {
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--secondary);
+  color: white;
+  padding: 6px 20px;
+  border-radius: 100px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.price-name {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--text-muted);
+  letter-spacing: 2px;
+  margin-bottom: 24px;
+}
+
+.price-amount {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.currency {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-top: 10px;
+}
+
+.value {
+  font-size: 56px;
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.price-period {
+  font-size: 15px;
+  color: var(--text-muted);
+  margin-bottom: 40px;
+}
+
+.price-features {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.price-features li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--surface);
+  font-size: 15px;
+  color: var(--text-main);
+}
+
+.price-btn {
+  width: 100%;
+  padding: 16px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+}
+
+.btn-filled {
+  background: var(--secondary);
+  color: white;
+}
+
+.btn-filled:hover {
+  background: #ea580c;
+  box-shadow: 0 10px 20px rgba(249, 115, 22, 0.3);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
+
+.btn-outline:hover {
+  background: var(--primary);
+  color: white;
+}
+
+@media (max-width: 576px) {
+  .price-card {
+    padding: 32px 24px;
+  }
+}

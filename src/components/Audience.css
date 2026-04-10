@@ -1,0 +1,38 @@
+.audience-section {
+  padding: 100px 0;
+}
+
+.audience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+}
+
+.audience-card {
+  background: var(--surface);
+  padding: 32px 24px;
+  border-radius: 20px;
+  text-align: center;
+  border: 1px solid var(--border);
+  transition: var(--transition-smooth);
+}
+
+.audience-icon {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.audience-label {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.audience-area {
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+.audience-card:hover .audience-area {
+  color: white;
+}
